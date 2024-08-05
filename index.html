@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<script>
+
+	
+	function load()
+	{
+		document.getElementById("demo").innerHTML = 5 + 6;
+	}
+	function myFunction() 
+	{
+	  var x = document.getElementsByClassName("city");
+	  for (var i = 0; i < x.length; i++) 
+	  {
+		  if (x[i].style.display === 'none') 
+		  {
+			x[i].style.display = 'block';
+		  } 
+		  else {
+			x[i].style.display = 'none';
+		  }
+	  }
+	}
+</script>
+
+<html>
+
+
+	<head>
+		<title>Damian Brygier</title>
+		 <link rel="stylesheet" href="styles.css">
+		<style>
+			h1   {color:Tomato;}
+			p    {color:MediumSeaGreen;}
+		</style>
+	</head>
+	
+	
+	<body onload="load()>
+		<div>
+		<div>
+			Menu
+			<a href="index.html">Home</a>
+			<a href="#omnie">Krótko o mnie...</a>
+			<a href="#blogi">Blogi / Wlogi</a>
+			<a href="#projekty">Projekty IT</a>
+			<a href="#wolontariat">Wolontariat</a>
+			<a href="#kontakt">Kontakt</a>
+		</div>
+		
+		<div>
+			<h1>Krótko o mnie ...</h1>
+			<p>Cześć, Jestem Damian. ...</p>
+			<a href="https://www.w3schools.com">This is a link</a>
+			</br>
+			<img src="https://keep.google.com/#NOTE/1NMY0OsmIFBIKVIk7UDSqQ0QyM7egEZ_5uQgyio2rzmZR5yoDctICQyvNM-8gIP0ANM9Gww" alt="image" width="104" height="142">
+			
+			<h1>Blogi / Wlogi</h1>
+			<p>Lorem ipsum...</p>
+			<button class="button button1" onclick="myFunction()">Hide</button>
+			</br>
+			</br>
+			<p id="demo"></p>
+			</br>
+			</br>
+			<div class="city">
+				blok1
+			</div>
+			<div class="city">
+				blok2
+			</div>
+			<div class="city">
+				blok3
+			</div>		
+		</div>
+		
+		<div>
+			Copyright (c) Damian Brygier, damianbrygier.pl
+		</div>
+		</div>
+	</body>
+	
+	
+</html>
